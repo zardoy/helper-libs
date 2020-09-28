@@ -4,6 +4,8 @@ This is a small library for working with URL [launch params](https://vk.com/dev/
 
 Also you can grab the full list of supported languages from link above.
 
+Note, that this package **doesn't contain** compiled JS, so you can use it **only with TypeScript**.
+
 ## Use
 
 1. `yarn add @zardoy/vk-params`
