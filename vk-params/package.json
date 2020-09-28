@@ -1,0 +1,11 @@
+{
+  "name": "@zardoy/vk-params",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "repository": "git@github.com:zardoy/small-libs.git",
+  "author": "Vitaly Turovsky <vital2580@icloud.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
