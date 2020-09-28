@@ -6,20 +6,19 @@ Also you can grab the full list of supported languages from link above.
 
 ## Use
 
-`yarn add @zardoy/vk-params`
+1. `yarn add @zardoy/vk-params`
+
+2. Import necessary methods. For example `import { vkGetParam } from "@zardoy/vk-params";`;
 
 ### Example use
 
 ```ts
-    import { vkGetParam, vkIsDesktopVersion, vkUserLanguage } from "@zardoy/vk-params";
+vkUserLanguage(); // will fallback to browser language, if there is no appropriate param
 
-    vkUserLanguage(); // will fallback to browser language, if there is no appropriate param
+// get vk launch param
+vkGetParam("app_id"); // always returns a string, not a number!
+// CAVEAT: for convenience it always returns string, but it actually can return null if there is no param, so be sure to check in root of your app that you are in vk env, like so:
+if (!vkGetParam("app_id")) throw new Error(`This app can work only from VK environment.`);
 
-    // get vk launch param
-    vkGetParam("app_id"); // always returns a string, not a number!
-    // CAVEAT: for convenience it always returns string, but it actually can return null if there is no param, so be sure to check in root of your app that you are in vk env, like so:
-    if (!vkGetParam("app_id")) throw new Error(`This app can work only from VK environment.`);
-
-    vkIsDesktopVersion(); // boolean, whether is app launched on desktop or not
-
+vkIsDesktopVersion(); // boolean, whether is app launched on desktop or not
 ```
