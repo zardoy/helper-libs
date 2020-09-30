@@ -11,9 +11,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "declaration": true,
+    "outDir": "dist"
   },
   "include": [
-    "index.ts"
+    "src"
   ]
 }
