@@ -1,6 +1,6 @@
 {
     "name": "@zardoy/vk-params",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "main": "index.ts",
     "description": "Helper for working with vk-mini-apps launch params",
     "repository": "git@github.com:zardoy/small-libs.git",
