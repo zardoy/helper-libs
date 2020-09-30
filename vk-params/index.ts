@@ -24,13 +24,13 @@ export const vkGetParam = <T extends keyof VK_PARAM_TYPES>(param: T): VK_PARAM_T
         param === "app_id" ||
         param === "ts"
     ) {
-        return +param_value as any;
+        return +param_value! as any;
     } else if (
         param === "is_app_user" ||
         param === "are_notifications_enabled" ||
         param === "is_favorite"
     ) {
-        return Boolean(+param_value) as any;
+        return Boolean(+param_value!) as any;
     } else {
         return param_value as any;
     }
