@@ -1,10 +1,10 @@
 {
     "name": "@zardoy/vk-params",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "description": "Helper for working with vk-mini-apps launch params",
-    "repository": "git@github.com:zardoy/small-libs.git",
+    "repository": "git@github.com:zardoy/helper-libs.git",
     "author": "Vitaly Turovsky <vital2580@icloud.com>",
     "license": "MIT",
     "devDependencies": {
