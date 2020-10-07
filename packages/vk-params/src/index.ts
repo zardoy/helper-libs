@@ -13,6 +13,12 @@ interface VK_PARAM_TYPES {
     ts: null | number;
 }
 
+/**
+ * @description Gets VK launch param from URL
+ * @param param name of the url param
+ * @returns value of the param
+ * @example ```vkGetParam("app_id") === 2342```
+ */
 export const vkGetParam = <T extends keyof VK_PARAM_TYPES>(param: T): VK_PARAM_TYPES[T] => {
     const canBeNull = param === "group_id" || param === "viewer_group_role" || param === "ts";
     const vk_param = "vk_" + param;
@@ -36,4 +42,7 @@ export const vkGetParam = <T extends keyof VK_PARAM_TYPES>(param: T): VK_PARAM_T
     }
 };
 
+/**
+ * @returns Is app launched on desktop
+ */
 export const vkIsDesktopVersion = () => vkGetParam("platform") === "desktop_web";
