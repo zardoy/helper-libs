@@ -1,7 +1,7 @@
 {
     "name": "@zardoy/vk-params",
     "description": "Helper for working with vk-mini-apps launch params",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "main": "build/index.js",
     "types": "build/index.d.ts",
