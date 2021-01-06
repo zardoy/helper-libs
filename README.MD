@@ -1,4 +1,4 @@
-# VK Params &middot; [![npm version](https://img.shields.io/npm/v/@zardoy/vk-params?color=limegreen)](https://npmjs.com/package/@zardoy/vk-params) ![GitHub top language](https://img.shields.io/github/languages/top/zardoy/vk-params) ![GitHub license](https://img.shields.io/github/license/zardoy/vk-params) [![gitmoji badge](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://github.com/carloscuesta/gitmoji)
+# VK Params &middot; [![npm version](https://img.shields.io/npm/v/@zardoy/vk-params?color=limegreen)](https://npmjs.com/package/@zardoy/vk-params) [![GitHub top language](https://img.shields.io/github/languages/top/zardoy/vk-params)](https://github.com/zardoy/vk-params/tree/master/src) ![GitHub license](https://img.shields.io/github/license/zardoy/vk-params) [![gitmoji badge](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://github.com/carloscuesta/gitmoji)
 
 A small helper for working with VK [launch params [ru]](https://vk.com/dev/vk_apps_docs3?f=6.%2B%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B%2B%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0). Useful for **vk-mini-apps**.
 
@@ -23,8 +23,7 @@ vkGetParam("are_notifications_enabled");
 
 Return value depends on param argument.
 
-It is important to know, that if appropriate param in url doesn't exist this function will throw an Error.
-<!-- TODO index.ts link -->
+It is important to know, that if appropriate param in url doesn't exist this function will [throw an Error](https://github.com/zardoy/vk-params/blob/b73581e07f2fe11771fdc6ceb4d6b087a3451aff/src/index.ts#L29).
 
 ### `vkIsDesktopVersion(): boolean`
 
