@@ -1,3 +1,5 @@
+type MobilePlatform = "android" | "iphone";
+
 interface VK_PARAM_TYPES {
     user_id: number,
     app_id: number,
@@ -8,7 +10,7 @@ interface VK_PARAM_TYPES {
     access_token_settings: string,
     group_id: string | null,
     viewer_group_role: ("none" | "member" | "moder" | "editor" | "admin") | null,
-    platform: "mobile_android" | "mobile_iphone" | "mobile_web" | "desktop_web" | "mobile_android_messenger" | "mobile_iphone_messenger",
+    platform: `mobile_${MobilePlatform}` | `mobile_${MobilePlatform}_messenger` | "mobile_web" | "desktop_web",
     is_favorite: boolean,
     ts: null | number;
 }

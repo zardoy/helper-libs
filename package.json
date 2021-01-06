@@ -1,0 +1,28 @@
+{
+    "name": "@zardoy/vk-params",
+    "description": "Helper for working with vk-mini-apps launch params",
+    "version": "0.2.5",
+    "license": "MIT",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "files": [
+        "build"
+    ],
+    "repository": "git@github.com:zardoy/vk-params.git",
+    "author": "Vitaly Turovsky <vital2580@icloud.com>",
+    "devDependencies": {
+        "@types/node": "^14.11.2",
+        "typescript": "^4.0.3"
+    },
+    "keywords": [
+        "typescript",
+        "utility",
+        "util",
+        "javascript",
+        "js",
+        "vk",
+        "vkontakte",
+        "vk-mini-apps",
+        "launch params"
+    ]
+}
