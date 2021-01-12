@@ -29,6 +29,14 @@ It is important to know, that if appropriate param in url doesn't exist this fun
 
 Shortcut for `vkGetParam("platform") === "desktop_web"`.
 
+### `paramNames`
+
+Array of names all VK launch params.
+
+### `nullableParamNames`
+
+Same as previous, but contains only params that may not exist in url.
+
 ## Things to note
 
 - If you are using *React*, you should use [Error Boundary](https://ru.reactjs.org/docs/error-boundaries.html) in the root of your app.
