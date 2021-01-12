@@ -19,10 +19,7 @@ jobs:
           with:
             node-version: 14
         - run: yarn install
-        # Is it workaround?
-        - run: yarn add semantic-release-gitmoji -D
-        # I don't wanna create release.config.js to keep repository clean and make it easy to copy this action
-        - run: npx semantic-release --plugins "semantic-release-gitmoji","@semantic-release/npm","@semantic-release/github" --dryRun
+        - run: npx semantic-release
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
