@@ -34,6 +34,6 @@ Shortcut for `vkGetParam("platform") === "desktop_web"`.
 - If you are using *React*, you should use [Error Boundary](https://ru.reactjs.org/docs/error-boundaries.html) in the root of your app.
 - For proper typings support, use TypeScript v4 or higher.
 
-[Stats, file list and more detailed info](https://yarnpkg.com/package/@zardoy/vk-params)
+[Stats, file list and more package details](https://yarnpkg.com/package/@zardoy/vk-params)
 
-If you know a better alternative to this module, please let me know about it.
+*Please*, let me know if you find a better alternative to this module.
