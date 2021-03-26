@@ -69,10 +69,10 @@ const vkParams = makeVkParams({
         parseMethod: "number",
         canBeNull: true
     },
-    // sign usually used only on backend
+    // sign is usually used only on backend
 });
 
-export const paramNames = Object.keys(vkParams);
+export const paramNames = Object.keys(vkParams) as (keyof typeof vkParams)[];
 export const nullableParamNames =
     Object.entries(vkParams)
         .filter(([, config]) => "canBeNull" in config)
